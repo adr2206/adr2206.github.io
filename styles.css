@@ -1,0 +1,122 @@
+/* Fondo bonito con gradiente de colores */
+body {
+  background: linear-gradient(135deg, #e6f5ff, #b3e6ff);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+
+h1 {
+  margin-bottom: 20px;
+}
+
+#registro-cliente,
+#listado-clientes {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 5px;
+}
+
+input,
+select {
+  margin-bottom: 15px;
+  padding: 5px;
+}
+
+button {
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+#lista-clientes {
+  list-style: none;
+  padding: 0;
+}
+
+#lista-clientes li {
+  margin-bottom: 5px;
+}
+/* Estilos para el botón "Ver clientes registrados" */
+.ver-clientes-button {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #007bff;
+  padding: 8px 12px;
+  border-radius: 5px;
+}
+
+.ver-clientes-button a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.ver-clientes-button a:hover {
+  background-color: #0056b3;
+}
+/* Estilos para la tabla de clientes */
+#listado-clientes {
+  width: 100%;
+}
+
+#lista-clientes {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+#lista-clientes th,
+#lista-clientes td {
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+#lista-clientes th {
+  background-color: #f9f9f9;
+  font-weight: bold;
+  text-align: left;
+}
+
+#lista-clientes td {
+  text-align: left;
+}
+
+/* Estilos para responsive */
+@media screen and (max-width: 768px) {
+  #lista-clientes th,
+  #lista-clientes td {
+    padding: 8px;
+    font-size: 14px;
+  }
+}

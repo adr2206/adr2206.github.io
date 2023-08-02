@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página de registro de vuelos</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="registro-cliente" class="container">
+    <h1>Registro de cliente y vuelo</h1>
+    <!-- Formulario para registrar datos del cliente y vuelo -->
+    <form id="formulario-registro">
+      <!-- Datos del cliente -->
+      <label for="nombre">Nombre y apellido:</label>
+      <input type="text" id="nombre" required>
+      <label for="edad">Edad:</label>
+      <input type="number" id="edad" required>
+      <label for="genero">Género:</label>
+      <select id="genero" required>
+        <option value="masculino">Masculino</option>
+        <option value="femenino">Femenino</option>
+        <option value="otro">Otro</option>
+      </select>
+
+      <!-- Datos del vuelo -->
+      <label for="origen">Origen:</label>
+      <input type="text" id="origen" required>
+      <label for="destino">Destino:</label>
+      <input type="text" id="destino" required>
+      <label for="metodo-pago">Método de pago:</label>
+      <select id="metodo-pago" required>
+        <option value="efectivo">Efectivo</option>
+        <option value="pago-movil">Pago móvil</option>
+      </select>
+
+      <button type="submit">Registrar</button>
+    </form>
+  </div>
+
+  <!-- Agregamos el botón "Ver clientes registrados" en la esquina superior derecha -->
+  <div class="ver-clientes-button">
+    <a href="clientes.html">Ver clientes registrados</a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
